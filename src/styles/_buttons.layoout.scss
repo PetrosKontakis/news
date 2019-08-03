@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 
+
 .btn {
   border: 0;
   background: white;
@@ -33,4 +34,8 @@
     color: white;
     background-color: $primary-color;
   }
+}
+
+.input{
+  @extend .btn
 }
