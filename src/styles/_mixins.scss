@@ -1,0 +1,7 @@
+@mixin generateGridClass($numbers...){
+    @each $i in $numbers {
+        .grid-#{$i}{
+            flex: #{$i}#{"%"}
+        }
+    }
+}

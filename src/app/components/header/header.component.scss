@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+
+.header-container {
+  background-color: $primary-color;
+  box-sizing: border-box;
+  padding: 8px;
+  color: white;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+.header-container-relative{
+  height: 65px;
+}
+
+.greading {
+  line-height: 47px;
+  font-weight: 600;
+  margin-left: 14px;
+}

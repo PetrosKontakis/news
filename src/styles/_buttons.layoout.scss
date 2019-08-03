@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+
+.btn {
+  border: 0;
+  background: white;
+  box-shadow: $shadow-primary;
+  border-radius: 2px;
+  color: $primary-text-color;
+  padding: 14px;
+  margin: 14px;
+  transition: $standart-transition;
+  cursor: pointer;
+  &:hover {
+    border-radius: 6px;
+    box-shadow: $shadow-secondary;
+  }
+  &:disabled {
+    background: $primary-text-color;
+    color: white;
+    &:hover {
+      border-radius: 2px;
+      box-shadow: $shadow-primary;
+      cursor: default;
+      background: $primary-text-color;
+      color: white;
+    }
+  }
+}
+
+.btn-primary {
+  &:hover {
+    color: white;
+    background-color: $primary-color;
+  }
+}

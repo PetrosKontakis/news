@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles/grid.layout";
+@import "styles/card.layout";
+@import "styles/buttons.layoout";
+@import "styles/texts.layout";
+@import "styles/portrait.layout";
+
+@import "styles/variables";
+body{
+    background-color: $page-background-color;
+    color: $primary-text-color;
+    margin: 0;
+}

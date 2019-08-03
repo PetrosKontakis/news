@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixins";
+
+.card{
+    background: white;
+    border-radius: 2px;
+    color: $primary-text-color;
+    margin: 14px;
+    transition: $standart-transition;
+    
+    
+    &:hover {
+      border-radius: 6px;
+      box-shadow: $shadow-secondary;
+    }
+    .card-header{
+        height: 180px;
+        background: $gray-color;
+        background-position: center;
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+    .card-body{
+      padding: 14px;
+      min-height: 98px;
+    }
+    .card-content{
+      margin-top: 14px;
+      font-size: .9em;
+
+    }
+    .card-title{
+      font-size: 1.2em;
+    }
+    .card-footer{
+      padding: 14px;
+      img{
+        width: 18px;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+    }
+}
