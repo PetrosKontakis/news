@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SourceModel } from 'src/app/models/source-model';
 
 @Component({
   selector: 'app-news-card',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsCardComponent implements OnInit {
 
+  @Input() src: SourceModel;
   constructor() { }
 
   ngOnInit() {

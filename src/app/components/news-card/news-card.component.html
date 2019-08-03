@@ -5,18 +5,17 @@
 
     </div>
     <div class="card-body">
-
         <div class="card-title">
-            This is the title
+            <a [href]="src.url" target="_blank">
+                {{src.name}}
+            </a>
         </div>
         <div class="card-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at quasi, consectetur quod deserunt,
-            exercitationem facilis earum est nesciunt neque non ea aspernatur labore iste placeat sint quaerat enim
-            quibusdam!
+           {{src.description}}
         </div>
     </div>
     <div class="card-footer">
         <img src="../../../assets/images/baseline-local_offer-24px.svg" alt="">
-        Category
+        {{src.category}}
     </div>
 </div>

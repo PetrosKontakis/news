@@ -1,7 +1,7 @@
 import { Source } from '../dtos/source';
 
-export class SourceModel implements Source{
-    id: string;    name: string;
+export class SourceModel implements Source {
+    id: string; name: string;
     description: string;
     url: string;
     category: string;
@@ -9,5 +9,8 @@ export class SourceModel implements Source{
     country: string;
     urlsToLogos: string[];
     sortBysAvailable: string[];
+    constructor(src: Source) {
+        Object.assign(this, src)
+    }
 
 }
